@@ -94,8 +94,9 @@ function stikyMenu() {
 
 function openMobileNav() {
     $('.navbar__toggle').on('click', function() {
-        var wrapp = $('.nav');
-
+        var wrapp = $('.navbar');
+        $('body').toggleClass('navbar__open');
+        $(this).toggleClass('active');
         wrapp.toggleClass('open');
     });
 };

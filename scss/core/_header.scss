@@ -1,21 +1,51 @@
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
-	padding: 1em 0;
-	background-color: #ddd;
+	padding: 1.6em 0;
+	position: relative;
+	z-index: 10;
+	// background-color: #ddd;
+
+	@media (max-width: 767px) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
 
 	&__content {
 		@extend .container_center;
 		margin: auto;
 		display: flex;
+		align-items: flex-start;
 		justify-content: space-between;
 	}
-}
 
+	&__right {
+
+		@media (min-width: 768px) {
+			display: flex;
+			justify-content: flex-end;
+			flex-grow: 1;
+		}
+	}
+
+}
 // stiky menu
 .stiky {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+}
+
+.logo {
+	display: block;
+	margin-top: 0;
+	width: 5.4em;
+
+	@media (min-width: 768px) {
+		margin-top: 1.9em;
+		width: 11.4em;
+	}
 }

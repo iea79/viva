@@ -5,37 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?0.1"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?0.5"/>
   </head>
   <body>
     <header class="header">
       <div class="header__content">
         <div class="header__left"><a class="logo" href="/"><img src="img/logo.png" alt="alt"/></a></div>
         <nav class="header__right">
+          <div class="navbar__toggle"></div>
           <ul class="navbar">
-            <li class="navbar__item"><a class="navbar__link" href="">Page1</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page2</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page3</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page4</a></li>
+            <li class="navbar__item"><a class="navbar__link active" href="">Home</a>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="">Models</a>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="">About</a>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="">Apply</a>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main_content">
-      <div class="container_center">
-        <div class="grid">
-          <div class="grid__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, in.</div>
-          <div class="grid__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam sequi officiis. Quia sed modi voluptatem, aut rem possimus at ipsa nobis iure non corporis nulla suscipit praesentium quos numquam quasi magni delectus eius illo, harum hic id! Laboriosam culpa recusandae nesciunt ab natus molestiae porro reiciendis, eveniet architecto temporibus!</div>
-          <div class="grid__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt fugiat, pariatur, explicabo ut quidem deleniti velit sed error dolor! Voluptates dignissimos consectetur repudiandae ipsam. Iusto, rerum, quam! Corporis, nisi, inventore?</div>
+      <!-- begin home-->
+      <section class="home section" id="home">
+        <picture class="home__bg">
+          <source srcset="img/home-bg.jpg" media="(max-width: 767px)"/><img src="img/home-bg.jpg" alt=""/>
+        </picture>
+        <div class="container_center">
+          <div class="home__text">Atlanta, Bellevue, Boston, Chicago, Dallas, Denver, Houston, Kansas City, Las Vegas, Los Angeles, Manhattan, Miami, Minneapolis, Oklahoma, City, Philadelphia Phoenix, Portland, Salt Lake City, San Diego, San Francisco, San Jose, Seattle, Secaucus, Tysons Corner.</div>
         </div>
-      </div>
+      </section>
+      <!-- end home-->
+      <!-- begin home-models-->
+      <section class="home-models section" id="home-models">
+        <div class="container_center">
+          <h2 class="section__title">Models</h2>
+          <div class="home-models__content">
+            <div class="home-models__left">
+              <div class="home-models__list">
+                <div class="home-models__item"><a class="home-models__img" href="">
+                    <picture class="home-models__pic">
+                      <source srcset="img/model1.jpg" media="(max-width: 767px)"/><img src="img/model1.jpg" alt=""/>
+                    </picture></a>
+                  <div class="home-models__name">Anna</div>
+                  <div class="home-models__action">
+                    <div class="home-models__city">NEW YORK</div>
+                    <div class="home-models__avalable"> AVAILABLE NOW</div>
+                  </div>
+                </div>
+                <div class="home-models__item"><a class="home-models__img" href="">
+                    <picture class="home-models__pic">
+                      <source srcset="img/model2.jpg" media="(max-width: 767px)"/><img src="img/model2.jpg" alt=""/>
+                    </picture></a>
+                  <div class="home-models__name">CRIS</div>
+                  <div class="home-models__action">
+                    <div class="home-models__city">MIAMI</div>
+                    <div class="home-models__avalable">AVAILABLE NOW</div>
+                  </div>
+                </div>
+                <div class="home-models__item"><a class="home-models__img" href="">
+                    <picture class="home-models__pic">
+                      <source srcset="img/model3.jpg" media="(max-width: 767px)"/><img src="img/model3.jpg" alt=""/>
+                    </picture></a>
+                  <div class="home-models__name">ELLA</div>
+                  <div class="home-models__action">
+                    <div class="home-models__city">BOSTON</div>
+                    <div class="home-models__avalable home-models__avalable_danger">NOT AVAILABLE</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-models__right">
+              <div class="home-tours">
+                <div class="home-tours__title">Tours:</div>
+                <div class="home-tours__list">
+                  <div class="home-tours__item">
+                    <div class="home-tours__city">Atlanta</div>
+                    <div class="home-tours__model">Anna oct. 2-10</div>
+                    <div class="home-tours__model">Ella nov. 3-8</div>
+                  </div>
+                  <div class="home-tours__item">
+                    <div class="home-tours__city">Bellevue</div>
+                    <div class="home-tours__model">Cris jan. 6-14</div>
+                    <div class="home-tours__model">Julia feb.20-23</div>
+                  </div>
+                  <div class="home-tours__item">
+                    <div class="home-tours__city">Boston</div>
+                    <div class="home-tours__model">Anna mar. 23-28</div>
+                    <div class="home-tours__model">Ella apr. 6-11</div>
+                  </div>
+                  <div class="home-tours__item">
+                    <div class="home-tours__city">Chicago</div>
+                    <div class="home-tours__model">Anna may. 4-9</div>
+                    <div class="home-tours__model">Ella June 12-22</div>
+                  </div>
+                  <div class="home-tours__item">
+                    <div class="home-tours__city">Dallas</div>
+                    <div class="home-tours__model">Anna July 11-15</div>
+                    <div class="home-tours__model">Ella aug.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-rate">
+                <div class="home-rate__item">
+                  <div class="home-rate__name">DARIA</div>
+                  <div class="home-rate__stars">
+                    <div class="rate"><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star"></i></div>
+                  </div>
+                </div>
+                <div class="home-rate__item">
+                  <div class="home-rate__name">VERA</div>
+                  <div class="home-rate__stars">
+                    <div class="rate"><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star"></i></div>
+                  </div>
+                </div>
+                <div class="home-rate__item">
+                  <div class="home-rate__name">VENERA</div>
+                  <div class="home-rate__stars">
+                    <div class="rate"><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star"></i></div>
+                  </div>
+                </div>
+                <div class="home-rate__item">
+                  <div class="home-rate__name">JACKIE</div>
+                  <div class="home-rate__stars">
+                    <div class="rate"><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star active"></i><i class="icon_star"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end home-models-->
     </main>
     <footer class="footer">
-      <div class="footer__content">
-        <p></p>&copy; 2016 |<i class="fa fa-github" aria-hidden="true">&nbsp;</i><a href="#">View Source</a>
-      </div>
+      <div class="footer__content">ESCORT USA</div>
     </footer>
     <script src="js/jquery.js"></script>
-    <script src="js/function.js?0.1"></script>
+    <script src="js/function.js?0.5"></script>
   </body>
 </html>

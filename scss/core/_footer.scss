@@ -2,8 +2,8 @@
  ----------------------------------------------------------------------------- */
 .footer {
 	position: relative;
-	padding: 1em 0;
-	background-color: #ddd;
+	padding: 0.5em 0;
+	// background-color: #ddd;
 
 	&__content {
 		@extend .container_center;

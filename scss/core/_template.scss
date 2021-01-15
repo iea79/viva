@@ -3,10 +3,11 @@
 body {
 	display: flex;
 	flex-direction: column;
-	font-size: calc(.034 * 100vw + 0px);
+	// font-size: calc(.034 * 100vw + 0px);
+	font-size: 13px;
 	height: auto;
 	min-height: 100%;
-	// color: $color_withe;
+	background-color: #242323;
 
 	// background-color: #101010;
 
@@ -15,11 +16,12 @@ body {
 	}
 
 	@media (min-width: 1400px) {
-		font-size: calc(.00838 * 100vw + 0px);
+		// font-size: calc(.00838 * 100vw + 0px);
+		font-size: 1em;
 	}
 
 	@media (min-width: 1600px) {
-		font-size: calc(.00838 * 100vw + 0px);
+		// font-size: calc(.00838 * 100vw + 0px);
 	}
 
 }
@@ -42,6 +44,7 @@ body {
 	padding: 0 1em;
 	margin-left: auto;
 	margin-right: auto;
+	width: 100%;
 }
 
 .desktop {

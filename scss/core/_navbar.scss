@@ -2,27 +2,79 @@
 -------------------------------------------------------------------------------*/
 .navbar {
 	margin: 0;
-	padding: 0;
+	padding: 4em 2em;
 	list-style: none;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
+
+	@media (min-width: 768px) {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0.35em 11.4em;
+		max-width: 62em;
+
+	}
+
+	@media (max-width: 767px) {
+		position: fixed;
+		background-color: $color_dark;
+		left: -100%;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow-y: auto;
+		z-index: 10;
+		transition: left 0.3s;
+
+		&.open {
+			left: 0;
+		}
+
+		&__open {
+			overflow: hidden;
+		}
+	}
 
 	&__item {
 		// display: inline-block;
-		margin: 5px;
+		margin: 1em 0;
+
+		@media (min-width: 768px) {
+			margin: 0 1em;
+		}
 	}
 
-	&__link {}
+	&__link {
+		color: $main_color;
+		text-decoration: none;
+		font-size: 2em;
+
+		@media (min-width: 768px) {
+			font-size: 1em;
+
+		}
+
+		&:hover {
+			color: $color_danger;
+		}
+
+		&.active {
+			color: $color_danger;
+		}
+	}
 
 	&__toggle {
 		@media (max-width: 767px) {
 			position: absolute;
-			color: #00aed4;
+			color: $color_withe;
 			border-top: 0.2em solid;
 			border-bottom: 0.2em solid;
-			left: 1.3em;
-			top: 1.3em;
-			width: 2em;
-			height: 1.5em;
+			right: 2em;
+			top: 2em;
+			width: 2.5em;
+			height: 1.7em;
 			cursor: pointer;
 			z-index: 51;
 			transition: border-color 0.3s;

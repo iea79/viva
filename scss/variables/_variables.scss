@@ -1,21 +1,23 @@
 /* Global variables */
 /* ======================================================================== */
-$main_font_family: "Open Sans";
-$main_color: #000;
+$main_font_family: "Questrial";
+$title_font_family: 'Oswald';
+$main_color: #fff;
 $main_line_height: 1.2;
 $main_font_size: 16px;
 
-$container_width: 80em;
+$container_width: 99em;
 
 $footer_height: auto;
 
 // Color collection for elements
 $color_primary: #7b8287;
-$color_success: #36a566;
+$color_success: #ec7969;
 $color_info: #03a9f4;
-$color_warning: #fca33e;
-$color_danger: #ff1a1a;
+$color_warning: #FFDE5F;
+$color_danger: rgb(236, 121, 105);
 $color_withe: #ffffff;
+$color_dark: #242323;
 
 $el-colors: (
 	primary: $color_primary, // color for .element__primary

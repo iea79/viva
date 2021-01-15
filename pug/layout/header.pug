@@ -4,7 +4,11 @@ header.header
             a.logo(href="/")
                 img(src="img/logo.png", alt="alt")
         nav.header__right
+            .navbar__toggle
             ul.navbar
-                each navLink in [{name: 'Page1', href: ''},{name: 'Page2', href: ''},{name: 'Page3', href: ''},{name: 'Page4', href: ''},]
+                each navLink, i in [{name: 'Home', href: ''},{name: 'Models', href: ''},{name: 'About', href: ''},{name: 'Apply', href: ''},{name: 'Contact', href: ''},]
                     li.navbar__item
-                        a.navbar__link(href= navLink.href)= navLink.name
+                        if i===0
+                            a.navbar__link.active(href= navLink.href)= navLink.name
+                        else
+                            a.navbar__link(href= navLink.href)= navLink.name
